@@ -1,5 +1,5 @@
 defmodule DevJutsuWeb.PageControllerTest do
-  use DevJutsuWeb.ConnCase
+  use DevJutsuWeb.ConnCase, async: true
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

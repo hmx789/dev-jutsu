@@ -21,6 +21,8 @@ defmodule DevJutsuWeb.ConnCase do
       use Phoenix.ConnTest
       alias DevJutsuWeb.Router.Helpers, as: Routes
 
+      import DevJutsu.Factory
+
       # The default endpoint for testing
       @endpoint DevJutsuWeb.Endpoint
     end
