@@ -1,6 +1,8 @@
 defmodule DevJutsuWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :dev_jutsu
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", DevJutsuWeb.UserSocket,
     websocket: true,
     longpoll: false

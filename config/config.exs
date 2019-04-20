@@ -15,7 +15,10 @@ config :dev_jutsu, DevJutsuWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "65IMkp9klomzs3R8GIUZ21ow6jv9svah1uAR/YaB3TFKyETEq8cVQHi/coF0OZ2I",
   render_errors: [view: DevJutsuWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: DevJutsu.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: DevJutsu.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "66g3Pn17WSNRn+xB/uzjeL7yZHIKZ8HY"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,

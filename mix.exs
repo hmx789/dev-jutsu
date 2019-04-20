@@ -40,10 +40,11 @@ defmodule DevJutsu.MixProject do
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
+      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view"},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:mix_test_watch, "~> 0.9", only: :dev, runtime: false},
       {:excoveralls, "~> 0.10", only: :test}
     ]
