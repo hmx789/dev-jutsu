@@ -1,0 +1,24 @@
+language: elixir
+
+elixir:
+  - 1.7.4
+  
+otp_release:
+  - 21.2
+
+addons:
+  postgresql: '9.4'
+
+services:
+  - postgresql
+
+env:
+  global:
+    - DATABASE_PASSWORD=''
+    - MIX_ENV=test
+
+jobs:
+  include:
+    - stage: test
+      script:
+        - mix coveralls.travis

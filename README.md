@@ -1,5 +1,8 @@
 # DevJutsu
 
+[![Build Status](https://travis-ci.org/dev-jutsu/dev-jutsu.svg?branch=development)](https://travis-ci.org/dev-jutsu/dev-jutsu)
+[![Coverage Status](https://coveralls.io/repos/github/dev-jutsu/dev-jutsu/badge.svg?branch=development)](https://coveralls.io/github/dev-jutsu/dev-jutsu?branch=development)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

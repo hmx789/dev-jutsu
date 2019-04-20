@@ -10,6 +10,7 @@ defmodule DevJutsu.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
+      test_coverage: [tool: ExCoveralls],
       deps: deps()
     ]
   end
@@ -43,7 +44,8 @@ defmodule DevJutsu.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:mix_test_watch, "~> 0.9", only: :dev, runtime: false}
+      {:mix_test_watch, "~> 0.9", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
