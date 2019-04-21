@@ -22,6 +22,7 @@ defmodule DevJutsu.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       import DevJutsu.DataCase
+      import DevJutsu.Factory
     end
   end
 

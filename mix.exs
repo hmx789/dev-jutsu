@@ -46,6 +46,7 @@ defmodule DevJutsu.MixProject do
       {:phoenix_live_view, github: "phoenixframework/phoenix_live_view"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:mix_test_watch, "~> 0.9", only: :dev, runtime: false},
+      {:ex_machina, "~> 2.3", only: :test},
       {:excoveralls, "~> 0.10", only: :test}
     ]
   end
